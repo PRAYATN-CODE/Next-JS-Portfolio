@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hide-horizontal-scrollbar {
+    /* For Firefox */
+    scrollbar-width: none;
+    /* For IE and Edge */
+    -ms-overflow-style: none;
+}
+
+.hide-horizontal-scrollbar::-webkit-scrollbar {
+    height: 0px;
+}
