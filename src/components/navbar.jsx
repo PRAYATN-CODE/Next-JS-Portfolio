@@ -89,10 +89,10 @@ const Navbar = () => {
         </div>
         <div className='hidden md:flex gap-8 justify-end w-1/3'>
           <Link href="https://github.com/PRAYATN-CODE">
-            <Image src='/github.png' alt='' width={24} height={24} />
+            <Image src='https://iili.io/3H4ccox.png' alt='' width={24} height={24} />
           </Link>
           <Link href="https://www.linkedin.com/in/prayatn-soni-bb512b279/">
-            <Image src='/linkedin.png' alt='' width={24} height={24} />
+            <Image src='https://iili.io/3H4lEXf.png' alt='' width={24} height={24} />
           </Link>
         </div>
         {/* responsive menu */}
@@ -121,7 +121,7 @@ const Navbar = () => {
             <motion.div variants={listVariants} initial='closed' animate='opened' className='absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-10 text-3xl z-40'>
               {links.map(link => (
                 <motion.div variants={listItemVariants} className='' key={link.url}>
-                  <Link href={link.url} className='px-2 py-1 hover:bg-gray-300'>
+                  <Link href={link.url} className='px-2 py-1 hover:bg-gray-300 z-50'>
                     {link.title}
                   </Link>
                 </motion.div>
